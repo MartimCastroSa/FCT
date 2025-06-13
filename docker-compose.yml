@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  db-container-demo:
+    image: "mysql:8.3"
+    container_name: db-container-demo
+    platform: linux/amd64
+    command: --default-authentication-plugin=mysql_native_password --innodb-use-native-aio=0
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./db/migrate/create_db.sql:/docker-entrypoint-initdb.d/dump.sql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3396:3306"
+  web-container-demo:
+    build: .
+    container_name: web-container-demo
+    platform: linux/amd64
+    restart: always
+    volumes:
+      - .:/code
+    ports:
+      - "8070:80"
