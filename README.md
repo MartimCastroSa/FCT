@@ -1,18 +1,48 @@
 # FCT
 # Developer Name: Martim
 
-# git clone linkgit  == Faz um clone do repositorio remoto dentro do GitHub para o meu computador
+## Comandos Git úteis
 
-# git status . == Mostra o estado do repositorio, amostra arquivos modificados.
-# - Se tiver vermelho == So esta no computador
-# - Se tiver verde == Foi modificado, mas ja esta no GitHub
+- **Clonar repositório:**
+  ```
+  git clone <link-do-repositorio>
+  ```
+  Faz um clone do repositório remoto do GitHub para o teu computador.
 
-# git diff README.md == Mostra o que foi removido dentro do ficheiro README.md e o que foi adicionado.
+- **Verificar estado do repositório:**
+  ```
+  git status
+  ```
+  Mostra o estado do repositório e os ficheiros modificados.
+  - Vermelho: só está no computador.
+  - Verde: foi modificado, mas já está no GitHub.
 
-# git add .\README.md == Adiciona o ficheiro para ser enviado para o GitHub
+- **Ver diferenças num ficheiro:**
+  ```
+  git diff README.md
+  ```
+  Mostra o que foi removido e adicionado no ficheiro README.md.
 
-# git commit -m "Adicionado o nome do developer ao ficheiro README" == Crio um commit com as mudacas que fiz e uma mensagem do que alterei.
+- **Adicionar ficheiro para commit:**
+  ```
+  git add README.md
+  ```
+  Adiciona o ficheiro para ser enviado para o GitHub.
 
-# git config --global user.email "teu@email.com" == Insiro o meu email para saberem quem fez a alteracao
+- **Criar commit:**
+  ```
+  git commit -m "Adicionado o nome do developer ao ficheiro README"
+  ```
+  Cria um commit com as mudanças feitas e uma mensagem descritiva.
 
-# gkit push == Envia os cpommits para o repositorio remoto no GitHub
+- **Configurar email do utilizador:**
+  ```
+  git config --global user.email "teu@email.com"
+  ```
+  Define o teu email para identificar quem fez as alterações.
+
+- **Enviar commits para o GitHub:**
+  ```
+  git push
+  ```
+  Envia os commits para o repositório remoto no GitHub.
