@@ -1,0 +1,141 @@
+/* Resetando alguns estilos para garantir consistência */
+body, h1, h2, h3, p, section {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, nav, footer {
+    background-color: #2f2f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navegação - Estilos aprimorados */
+nav {
+    background-color: #222; /* Cor de fundo escura para o menu */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px; /* Bordas arredondadas para o nav */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+nav a {
+    color: #ff99cc; /* Cor de texto roxo suave */
+    margin: 0 20px; /* Espaçamento entre os links */
+    text-decoration: none; /* Retira o sublinhado */
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Animação suave no hover */
+    padding: 10px;
+    border-radius: 5px; /* Cantos arredondados para os links */
+}
+
+nav a:hover {
+    background-color: #ff99cc; /* Cor de fundo no hover */
+    color: #333; /* Cor de texto ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    background-color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff99cc;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    color: #fff;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #ff99cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #e070a8;
+}
+
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociais ul li {
+    margin-bottom: 10px;
+}
+
+.redes-sociais ul li a {
+    text-decoration: none;
+    color: #ff99cc;
+    font-weight: bold;
+}
+
+.redes-sociais ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2f2f2f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
