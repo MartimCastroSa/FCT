@@ -46,3 +46,31 @@
   git push
   ```
   Envia os commits para o repositório remoto no GitHub.
+
+---
+
+## Funcionalidades do sistema
+
+- **Criação de uma conta:**
+  - Validação do email, da força da password e se a mesma está comprometida:
+    - `verifyRequestEmail;`
+    - `verifyPasswordStrength;`
+    - `verifyPwned;`
+- **Pedido de login:**
+  - Validação das credenciais, utilizando o bcrypt;
+- **Pedido de recuperação de password:**
+  - Validação do email:
+    - `verifyRequestEmail;`
+- **Pedido de alteração da password** (chave de recuperação enviada por email):
+  - Validação da chave de recuperação, da força da password e se a mesma está comprometida:
+    - `verifyTokenValidation;`
+    - `verifyPasswordStrength;`
+    - `verifyPwned;`
+- **Pedido de alteração da password:**
+  - Validação do token de utilizador, da força da password e se a mesma está comprometida:
+    - `verifyJWT utilizando o JWT;`
+    - `verifyPasswordStrength;`
+    - `verifyPwned;`
+- **Pedido de remoção da conta:**
+  - Validação do token de utilizador:
+    - `verifyJWT
