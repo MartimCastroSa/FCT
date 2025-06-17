@@ -73,4 +73,4 @@
     - `verifyPwned;`
 - **Pedido de remoção da conta:**
   - Validação do token de utilizador:
-    - `verifyJWT
+    - `verifyJWT;`
