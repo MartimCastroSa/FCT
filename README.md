@@ -31,7 +31,7 @@
 
 - **Criar commit:**
   ```
-  git commit -m "Adicionado o nome do developer ao ficheiro README"
+  git commit -m "Nome do commit"
   ```
   Cria um commit com as mudanças feitas e uma mensagem descritiva.
 
@@ -53,24 +53,24 @@
 
 - **Criação de uma conta:**
   - Validação do email, da força da password e se a mesma está comprometida:
-    - `verifyRequestEmail;`
-    - `verifyPasswordStrength;`
-    - `verifyPwned;`
+    - `verifyRequestEmail`
+    - `verifyPasswordStrength`
+    - `verifyPwned`
 - **Pedido de login:**
   - Validação das credenciais, utilizando o bcrypt;
 - **Pedido de recuperação de password:**
   - Validação do email:
-    - `verifyRequestEmail;`
+    - `verifyRequestEmail`
 - **Pedido de alteração da password** (chave de recuperação enviada por email):
   - Validação da chave de recuperação, da força da password e se a mesma está comprometida:
-    - `verifyTokenValidation;`
-    - `verifyPasswordStrength;`
-    - `verifyPwned;`
+    - `verifyTokenValidation`
+    - `verifyPasswordStrength`
+    - `verifyPwned`
 - **Pedido de alteração da password:**
   - Validação do token de utilizador, da força da password e se a mesma está comprometida:
-    - `verifyJWT utilizando o JWT;`
-    - `verifyPasswordStrength;`
-    - `verifyPwned;`
+    - `verifyJWT utilizando o JWT`
+    - `verifyPasswordStrength`
+    - `verifyPwned`
 - **Pedido de remoção da conta:**
   - Validação do token de utilizador:
-    - `verifyJWT;`
+    - `verifyJWT`
